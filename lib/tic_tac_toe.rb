@@ -60,7 +60,9 @@ class TicTacToe
   end
 
   def won?
-    over? && !draw?
+    WIN_COMBINATIONS.detect do |combo|
+      combo.all? { |position| position == current_player }
+    end
   end
 
   def full?
