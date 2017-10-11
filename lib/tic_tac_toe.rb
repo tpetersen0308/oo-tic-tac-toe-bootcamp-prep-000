@@ -64,7 +64,7 @@ class TicTacToe
       combo.all? do |position|
         @board[position] == "X"
       end ||
-      combo.all? do |position| 
+      combo.all? do |position|
         @board[position] == "O"
       end
     end
