@@ -83,7 +83,7 @@ class TicTacToe
   end
 
   def winner?
-    @board[won?.first]
+    won? ? @board[won?.first] : false
   end
 
 end
