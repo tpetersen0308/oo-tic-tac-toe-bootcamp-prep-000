@@ -87,7 +87,6 @@ class TicTacToe
   end
 
   def play
-    puts "Welcome to Tic Tac Toe!"
     until over?
       turn
     end
